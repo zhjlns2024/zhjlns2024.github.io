@@ -7,31 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Example Person</copyright>
-        <lastBuildDate>Mon, 12 Jan 2026 21:55:45 +0800</lastBuildDate><atom:link href="https://zhjlns2024.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>New</title>
-        <link>https://zhjlns2024.github.io/p/new/</link>
-        <pubDate>Mon, 12 Jan 2026 21:55:45 +0800</pubDate>
-        
-        <guid>https://zhjlns2024.github.io/p/new/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>数学建模</title>
-        <link>https://zhjlns2024.github.io/p/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/</link>
-        <pubDate>Mon, 12 Jan 2026 21:39:17 +0800</pubDate>
-        
-        <guid>https://zhjlns2024.github.io/p/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Newnew</title>
-        <link>https://zhjlns2024.github.io/p/newnew/</link>
-        <pubDate>Mon, 12 Jan 2026 21:17:37 +0800</pubDate>
-        
-        <guid>https://zhjlns2024.github.io/p/newnew/</guid>
-        <description></description>
-        </item>
-        <item>
+        <lastBuildDate>Fri, 09 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://zhjlns2024.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Archives</title>
         <link>https://zhjlns2024.github.io/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
