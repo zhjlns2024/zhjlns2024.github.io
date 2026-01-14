@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://zhjlns2024.github.io/tags/%D9%85%D8%A7%D8%B1%D9%83%D8%AF%D8%A7%D9%88%D9%86/'>
 
-<link rel="stylesheet" href="/scss/style.min.b0e76e98cdd4f7082d1fc36f7af7e0843a81201db2197c03ca426751dc923735.css"><meta property='og:title' content="Tag: ماركداون - 壮怀激烈难舒">
+<link rel="stylesheet" href="/scss/style.min.3facfecb7edf15365977f8baba19e94894218aef24cd8424a67116c8a9322664.css"><meta property='og:title' content="Tag: ماركداون - 壮怀激烈难舒">
 <meta property='og:description' content="命天成命中败，壮怀激烈仍未改。虽识成败一场空，终负他人笑谈中。">
 <meta property='og:url' content='https://zhjlns2024.github.io/tags/%D9%85%D8%A7%D8%B1%D9%83%D8%AF%D8%A7%D9%88%D9%86/'>
 <meta property='og:site_name' content='壮怀激烈难舒'>
@@ -137,20 +137,13 @@
         
         
         <li >
-            <a href='/%E5%85%B3%E4%BA%8E/' >
+            <a href='/%E5%88%86%E7%B1%BB%E6%A0%87%E7%AD%BE/' >
                 
                 
                 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="7" r="4" />
-  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-</svg>
-
-
-
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-tag-starred"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.5 7.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M3 6v5.172a2 2 0 0 0 .586 1.414l7.71 7.71a2.41 2.41 0 0 0 3.408 0l5.592 -5.592a2.41 2.41 0 0 0 0 -3.408l-7.71 -7.71a2 2 0 0 0 -1.414 -.586h-5.172a3 3 0 0 0 -3 3" /><path d="M12.5 13.847l-1.5 1.153l.532 -1.857l-1.532 -1.143h1.902l.598 -1.8l.598 1.8h1.902l-1.532 1.143l.532 1.857l-1.5 -1.153" /></svg>
                 
-                <span>关于</span>
+                <span>分类&amp;标签</span>
             </a>
         </li>
         
@@ -453,6 +446,113 @@
         document.head.appendChild(customFont);
     }());
 </script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<div id="aplayer"></div>
+
+
+<script>
+    const home = "https:\/\/zhjlns2024.github.io\/";
+    console.log(home);
+    const ap = new APlayer({
+    fixed: true,
+    container: document.getElementById('aplayer'),
+    audio: [{
+        name: 'backgroud_music',
+        artist: 'none',
+        url: home + 'music/背景音乐/bg-music.mp3',
+        cover:home + 'music/背景音乐/bg-photograph.jpg'
+    }]
+    }); 
+    
+
+    window.onbeforeunload = () => {
+        
+        const playInfo = {
+            index: ap.list.index,
+            currentTime: ap.audio.currentTime,
+            paused: ap.paused
+        };
+        localStorage.setItem("playInfo", JSON.stringify(playInfo));
+    };
+
+    
+
+    window.onload = () => {
+        
+        const playInfo = JSON.parse(localStorage.getItem("playInfo"));
+        if (!playInfo) {
+            return;
+        }
+        
+        ap.list.switch(playInfo.index);
+        
+        setTimeout(() => {
+            
+            ap.seek(playInfo.currentTime);
+            
+            if (!playInfo.paused) {
+                ap.play()
+            }
+        }, 500);
+    };
+</script>
+
+    <style>
+     
+    @font-face {
+      font-family: 'ChineseFont';
+      src: url(https://zhjlns2024.github.io/font/typeface.ttf) format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+      unicode-range: U+4E00-9FFF, U+3400-4DBF, U+F900-FAFF;  
+    }
+
+     
+    @font-face {
+      font-family: 'EnglishFont';
+      src: url(https://zhjlns2024.github.io/font/Nunito[wght].ttf) format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+      unicode-range: U+0020-007E, U+00A0-00FF;  
+    }
+
+     
+    :root {
+      --base-font-family: 'ChineseFont', 'EnglishFont', sans-serif;
+      --code-font-family: 'EnglishFont', monospace;  
+    }
+
+     
+    body {
+      font-family: var(--base-font-family);
+    }
+    pre, code {
+      font-family: var(--code-font-family);
+    }
+  </style>
+<div id="particles-js"></div>
+
+<script src=https://zhjlns2024.github.io/background/particles.min.js></script>
+<script>
+  particlesJS.load('particles-js', "https://zhjlns2024.github.io/background/particlesjs-config.json", function() {
+    console.log('particles.js loaded - callback');
+  });
+</script>
+
+<style>
+  #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+</style>
+
+<script src=https://zhjlns2024.github.io/background/background.js></script>
 
     </body>
 </html>
